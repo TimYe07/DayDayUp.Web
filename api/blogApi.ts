@@ -2,7 +2,7 @@ import axios from 'axios'
 
 class BlogApi {
   constructor() {
-    axios.defaults.baseURL = process.env.NODE_ENV == 'production' ? 'http://daydayup-api' : 'http://localhost:5015'
+    axios.defaults.baseURL = process.env.NODE_ENV == 'production' ? 'http://daydayup_api' : 'http://localhost:5015'
   }
   async GetPostsAsync(page: number) {
     return await axios.get(`/api/posts?page=${page}&limit=10`)
