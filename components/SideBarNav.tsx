@@ -47,9 +47,9 @@ export default function SimpleList() {
             <ListItemText className={classes.item} primary="标签" />
           </ListItem>
         </ActiveLink>
-        <ActiveLink activeClassName={classes.active} href="/archives">
+        <ActiveLink activeClassName={classes.active} href="/links">
           <ListItem button component={'a'}>
-            <ListItemText className={classes.item} primary="归档" />
+            <ListItemText className={classes.item} primary="友链" />
           </ListItem>
         </ActiveLink>
         <ListItem button component={'a'}>
