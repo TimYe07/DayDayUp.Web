@@ -3,7 +3,7 @@ import axios from 'axios'
 class BlogApi {
   constructor() {
     axios.defaults.withCredentials = true
-    axios.defaults.baseURL = process.browser ? 'https://codeporter.dev' : 'http://daydayup_api'
+    axios.defaults.baseURL = process.browser ? 'https://www.codeporter.dev' : 'http://daydayup_api'
   }
   async GetPostsAsync(page: number) {
     return await axios.get(`/api/posts?page=${page}&limit=10`)
